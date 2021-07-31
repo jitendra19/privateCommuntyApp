@@ -57,22 +57,24 @@ Notification service is to create channel for messaging and to notify live users
 Again, there we can maintain archive service and asset service for older messages and assets respectively.
 
 
-#### Data collections types in Couchbase Database are - 
-o	Communities
-o	Users
-o	Relationships
-o	Posts
-o	Messages – Chats
-o	Assets - pictures, videos,
-o	Activities - Likes, comment, share, 
-o	Analytics insights
-o	Trends
-o	Search
+##### Data collections types in Couchbase Database are - 
+1.	Communities 
+2.	Users 
+3.	Relationships 
+4.	Posts 
+5.	Messages – Chats 
+6.	Assets - pictures, videos, 
+7.	Activities - Likes, comment, share,  
+8.	Analytics insights 
+9.	Trends 
+10.	Search 
 
 Here is detailed structure of Data mentioned in below excel file -
  
 https://github.com/jitendra19/privateCommuntyApp/blob/main/schema.xlsx
 
+
+###### Demo Videos - 
 
 YouTube –   https://youtu.be/jXY7XI3R3ZY
 
