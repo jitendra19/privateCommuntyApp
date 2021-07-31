@@ -47,7 +47,10 @@ For live user timelines, live trends and notifications are required streaming so
 For active users which are offline, required notifications when they are login again- we need to use cache – Radis for this. Similarly, people who are frequently active, we need use cache for them. There are many use cases to use cache, in this kind of system.
 
 For Assets like images, videos, or documents we are maintaining different storage like S3. And handling all these operations, we have introduced Asset service.
----------------------------------
+
+
+                                                                ---------------------------------
+
 Now let’s talk about **Messenger system** – A user can send and receive message from set of users which are friends within same community. We can fetch this user relationship data via APIs from Radis cache or Couchbase database. 
 Then again there would be load balancer and web servers. Those are connected with Chat service. This service publish data to another instance or cluster of KAFKA, which is subscribed by Notification service and Couchbase and Radis cache. 
 Notification service is to create channel for messaging and to notify live users for real time messaging via web-socket and users which are not live we get all data via Rest API from cache or Database directly. 
@@ -69,7 +72,7 @@ o	Search
 Here is detailed structure of Data mentioned in below excel file -
 
 
-YouTube Video link –   https://youtu.be/jXY7XI3R3ZY 
+YouTube –   https://youtu.be/jXY7XI3R3ZY
 Google drive - https://drive.google.com/file/d/1hQ44K7k29x45hekRJiLeHjJHMs8x4tVI/view?usp=sharing 
 
 
