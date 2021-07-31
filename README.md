@@ -29,7 +29,7 @@ Below is detailed flow diagram of Some of major use cases for this system.
 We can download or view this from below link – 
 https://whimsical.com/design-facebook-with-messenger-service-P8LMSrjMAjZMXFVZyN2y9J 
 
-![image](https://user-images.githubusercontent.com/15645692/127738821-ed0ca663-accf-4578-9049-7dbe7c84751a.png)
+![Design Facebook with Messenger service (1)](https://user-images.githubusercontent.com/15645692/127749466-f5db8994-aa71-4914-9e68-3dbe8251cffb.png)
 
 We would need load balancers and webservers which will handle requests from actual users, decide where to send particular request to server.
 
@@ -49,7 +49,7 @@ For active users which are offline, required notifications when they are login a
 For Assets like images, videos, or documents we are maintaining different storage like S3. And handling all these operations, we have introduced Asset service.
 
 
-                                                                ---------------------------------
+---------------------------------
 
 Now let’s talk about **Messenger system** – A user can send and receive message from set of users which are friends within same community. We can fetch this user relationship data via APIs from Radis cache or Couchbase database. 
 Then again there would be load balancer and web servers. Those are connected with Chat service. This service publish data to another instance or cluster of KAFKA, which is subscribed by Notification service and Couchbase and Radis cache. 
@@ -70,9 +70,12 @@ o	Trends
 o	Search
 
 Here is detailed structure of Data mentioned in below excel file -
+ 
+https://github.com/jitendra19/privateCommuntyApp/blob/main/schema.xlsx
 
 
 YouTube –   https://youtu.be/jXY7XI3R3ZY
+
 Google drive - https://drive.google.com/file/d/1hQ44K7k29x45hekRJiLeHjJHMs8x4tVI/view?usp=sharing 
 
 
